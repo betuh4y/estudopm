@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Página de teste do chat</title>
+<style>
+  :root{--bg:#f4f6f9;--card:#fff;--ink:#1b2733;--mut:#5f6f80;--line:#e3e8ee}
+  @media(prefers-color-scheme:dark){:root{--bg:#0f1720;--card:#17212c;--ink:#e8eef4;--mut:#9aaaba;--line:#263444}}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  header{background:#0d47a1;color:#fff;padding:18px 20px}
+  header div,main{max-width:760px;margin:0 auto}
+  header strong{font-size:18px}
+  main{padding:28px 20px 120px}
+  h1{font-size:22px;margin:0 0 8px}
+  p{color:var(--mut);margin:0 0 18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px 20px;margin-bottom:16px}
+  .card h2{font-size:16px;margin:0 0 6px}
+  .card p{margin:0}
+  ol{margin:0;padding-left:20px;color:var(--mut)}
+  li{margin-bottom:4px}
+</style>
+</head>
+<body>
+<header><div><strong>Página de teste</strong></div></header>
+
+<main>
+  <h1>Teste do chat de atendimento</h1>
+  <p>Esta página simula um site qualquer com o código do chat colado. O botão deve aparecer no canto inferior direito.</p>
+
+  <div class="card">
+    <h2>Como testar</h2>
+    <ol>
+      <li>Confira se o botão aparece com o nome e a imagem do bot.</li>
+      <li>Clique no botão: o chat deve abrir só depois do clique.</li>
+      <li>Peça para falar com um atendente e responda pela área do agente em outra aba.</li>
+      <li>Finalize o atendimento e veja a avaliação no chat.</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>Conteúdo de exemplo</h2>
+    <p>Texto qualquer para dar altura à página e mostrar que o botão fica fixo no canto enquanto você rola.</p>
+  </div>
+  <div class="card"><h2>Mais conteúdo</h2><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p></div>
+  <div class="card"><h2>Mais conteúdo</h2><p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p></div>
+</main>
+
+<!-- Código do chat (cole antes de fechar o body em qualquer site) -->
+<script type="text/javascript">
+  (function(s, z, c, h, a, t) {
+    s.detranchat = s.detranchat || function() {
+      (s.detranchat.q = s.detranchat.q || []).push(arguments);
+    };
+    t = z.createElement(c),
+      a = z.getElementsByTagName(c)[0]; t.async = 1;
+    t.src = h + '/widget-launcher.js';
+    a.parentNode.insertBefore(t, a);
+    s.detranchat('position', 'right');
+    s.detranchat('color', '#1565c0');
+  })(window, document, 'script', 'https://detran-henna.vercel.app');
+</script>
+</body>
+</html>
